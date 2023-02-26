@@ -1,0 +1,23 @@
+#storeIndex {
+  width: 100%;
+  height: fit-content;
+}
+
+.carousel {
+  width: 100%;
+  background-color: #f7f9fa;
+}
+
+.carouselDiv {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.carouselDiv > ul > li {
+  display: flex;
+  justify-content: center;
+}
+
+.carouselDiv > ul > li > img {
+  height: 380px;
+}

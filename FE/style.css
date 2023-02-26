@@ -1,5 +1,6 @@
 @import url("css/reset.css");
 @import url("css/header.css");
+@import url("css/carousel.css");
 /* 반응형 1) 1256, 2) 1024, 3) 768 */
 
 :root {
