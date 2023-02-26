@@ -1,0 +1,218 @@
+/*nav First*/
+.navFirst {
+  position: sticky;
+  z-index: 1102;
+  transition: top 0.1s ease 0s;
+  top: 0px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eaedef;
+}
+
+.navFirstDiv,
+.navSecondDiv {
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1256px;
+  box-sizing: border-box;
+}
+
+.navFirstDiv {
+  position: relative;
+  padding: 18px 10%;
+  height: 60px;
+  line-height: 0;
+}
+
+.navLogo {
+  color: #212629;
+  font-size: 15px;
+}
+
+.navLogoA {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -4px;
+  padding: 4px;
+  font-size: 0;
+  line-height: 0;
+  color: var(--grey);
+  outline: none;
+  height: 26px;
+}
+
+.navLogoSvg {
+  height: 26px;
+}
+path {
+  fill: #000;
+}
+.navLeft {
+  display: flex;
+  min-width: 300px;
+  margin-left: 25px;
+  width: fit-content;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bolder;
+}
+.navLeft > a {
+  color: #2f3438;
+  margin: 0 10px;
+  width: fit-content;
+}
+.navLeft > a:hover,
+.navLeft > a:nth-child(2) {
+  color: var(--mainColor);
+}
+
+.navRight,
+.navRight > div,
+.navRight > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.navRightSearch,
+.navRightCart {
+  margin: 0 8px;
+}
+.navRightSearch {
+  position: relative;
+}
+.navRightSearch > span {
+  position: absolute;
+  left: 8px;
+}
+.navRightSearch > input {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 8px;
+  padding-left: 30px;
+  font-size: 0.9em;
+  color: grey;
+  width: 180px;
+}
+.navRightSearch > input:hover {
+  background-color: rgb(247, 247, 247);
+}
+.navRightSearch > input:focus {
+  border: 1px solid var(--mainColor);
+  outline: none;
+}
+
+.navRightMenus > div {
+  width: fit-content;
+  min-width: 170px;
+}
+.navRightMenus > div > a {
+  padding: 0 8px;
+  font-size: 0.7em;
+  color: grey;
+}
+.navRightMenus > div > a:not(:nth-child(3)) {
+  border-right: 1px solid rgba(128, 128, 128, 0.5);
+}
+.navRightMenus > span > button {
+  display: flex;
+  padding: 8px 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  font-size: 0.8em;
+  width: 70px;
+  border: none;
+  color: white;
+  background-color: var(--mainColor);
+  cursor: pointer;
+}
+.navRightMenus > span > button:hover {
+  background-color: rgb(0, 159, 206);
+}
+
+/*nav Second*/
+.navSecond {
+  position: sticky;
+  z-index: 1100;
+  transition: top 0.1s ease 0s;
+  top: 65px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eaedef;
+}
+
+.navSecondDiv {
+  height: 40px;
+  width: 100%;
+  padding: 3px 10% 0px 10%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.navDivMenus {
+  min-width: 600px;
+}
+
+.navDivMenus > a {
+  font-weight: bolder;
+  padding: 5px;
+  padding-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.navDivMenus > a:not(.currentMenu) {
+  color: var(--grey);
+}
+.navDivMenus > a:hover {
+  color: var(--mainColor);
+}
+
+.currentMenu {
+  color: var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
+}
+
+.navDivRank {
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
+}
+.navRank {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+.navRank > span {
+  margin: 0 2px;
+}
+
+.navRank > span:first-child {
+  font-weight: bold;
+  color: var(--grey);
+}
+
+.navRank > span:nth-child(2) {
+  font-size: 0.7em;
+}
+
+.navRank > .navRankNew {
+  color: tomato;
+}
+
+.navDivRank > span {
+  cursor: pointer;
+}

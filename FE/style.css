@@ -1,0 +1,26 @@
+@import url("css/reset.css");
+@import url("css/header.css");
+/* 반응형 1) 1256, 2) 1024, 3) 768 */
+
+:root {
+  --mainColor: #35c5f0;
+  --grey: #2f3438;
+}
+
+body,
+html {
+  font-size: 13px;
+  font-family: OhouseSans, Noto Sans KR, Apple SD Gothic Neo, 맑은 고딕,
+    Malgun Gothic, sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navMenuBtn {
+    display: none;
+  }
+}
