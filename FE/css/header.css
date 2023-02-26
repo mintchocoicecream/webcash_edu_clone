@@ -1,6 +1,6 @@
 /*nav First*/
 .navFirst {
-  position: sticky;
+  position: fixed;
   z-index: 1102;
   transition: top 0.1s ease 0s;
   top: 0px;
@@ -23,8 +23,8 @@
 
 .navFirstDiv {
   position: relative;
-  padding: 18px 10%;
-  height: 60px;
+  padding: 20px 5%;
+  height: 70px;
   line-height: 0;
 }
 
@@ -62,11 +62,15 @@
 path {
   fill: #000;
 }
+
+.navLeft,
+.navRight {
+  width: 100%;
+}
 .navLeft {
   display: flex;
   min-width: 300px;
-  margin-left: 25px;
-  width: fit-content;
+  margin-left: 20px;
   justify-content: flex-start;
   align-items: center;
   font-weight: bolder;
@@ -74,13 +78,16 @@ path {
 .navLeft > a {
   color: #2f3438;
   margin: 0 10px;
+  font-size: 1.3em;
   width: fit-content;
 }
 .navLeft > a:hover,
 .navLeft > a:nth-child(2) {
   color: var(--mainColor);
 }
-
+.navRight {
+  min-width: 625px;
+}
 .navRight,
 .navRight > div,
 .navRight > div > div {
@@ -103,9 +110,8 @@ path {
   border: 1px solid rgba(128, 128, 128, 0.3);
   padding: 8px;
   padding-left: 30px;
-  font-size: 0.9em;
   color: grey;
-  width: 180px;
+  width: 250px;
 }
 .navRightSearch > input:hover {
   background-color: rgb(247, 247, 247);
@@ -115,13 +121,17 @@ path {
   outline: none;
 }
 
+.navRightCart {
+  font-size: 1.1em;
+}
+
 .navRightMenus > div {
   width: fit-content;
   min-width: 170px;
 }
 .navRightMenus > div > a {
   padding: 0 8px;
-  font-size: 0.7em;
+  font-weight: bold;
   color: grey;
 }
 .navRightMenus > div > a:not(:nth-child(3)) {
@@ -129,11 +139,10 @@ path {
 }
 .navRightMenus > span > button {
   display: flex;
-  padding: 8px 10px;
+  padding: 10px 12px;
   border-radius: 5px;
   justify-content: space-between;
-  font-size: 0.8em;
-  width: 70px;
+  width: fit-content;
   border: none;
   color: white;
   background-color: var(--mainColor);
@@ -145,19 +154,24 @@ path {
 
 /*nav Second*/
 .navSecond {
-  position: sticky;
+  position: fixed;
   z-index: 1100;
   transition: top 0.1s ease 0s;
-  top: 65px;
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #eaedef;
 }
+.navSecond:not(.navScroll) {
+  top: 60px;
+}
+.navScroll {
+  top: 10px;
+}
 
 .navSecondDiv {
-  height: 40px;
+  height: 60px;
   width: 100%;
-  padding: 3px 10% 0px 10%;
+  padding: 18px 5% 0px 5%;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -168,9 +182,9 @@ path {
 
 .navDivMenus > a {
   font-weight: bolder;
-  padding: 5px;
-  padding-bottom: 8px;
-  font-size: 0.9em;
+  padding: 8px;
+  padding-bottom: 9px;
+  font-size: 1.2em;
 }
 
 .navDivMenus > a:not(.currentMenu) {
