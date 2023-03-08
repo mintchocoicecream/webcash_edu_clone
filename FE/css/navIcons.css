@@ -1,0 +1,52 @@
+.navIcons {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.navIcons > ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navIcons > ul > li {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.navIcons > ul > li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navIcons > ul > li > a > .navIconsImg {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.navIcons > ul > li > a > .navIconsImg > span {
+  position: absolute;
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 15px;
+  top: -5px;
+  right: -10px;
+}
+
+.navIcons > ul > li > a > .navIconsImg > img {
+  width: 65px;
+  border-radius: 18px;
+}
+
+.navIcons > ul > li > a > div:nth-child(2) {
+  font-size: 1.1em;
+  font-weight: 500;
+}
