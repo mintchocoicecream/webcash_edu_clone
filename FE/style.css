@@ -2,6 +2,7 @@
 @import url("css/header.css");
 @import url("css/carousel.css");
 @import url("css/navIcons.css");
+@import url("css/dealContents.css");
 /* 반응형 1) 1256, 2) 1024, 3) 768 */
 
 :root {
