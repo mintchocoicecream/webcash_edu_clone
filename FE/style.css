@@ -3,6 +3,7 @@
 @import url("css/carousel.css");
 @import url("css/navIcons.css");
 @import url("css/dealContents.css");
+@import url("css/category.css");
 /* 반응형 1) 1256, 2) 1024, 3) 768 */
 
 :root {
@@ -18,6 +19,11 @@ html {
   height: 100%;
 }
 
+footer {
+  height: 100px;
+  background-color: grey;
+  margin-top: 50px;
+}
 a {
   text-decoration: none;
 }

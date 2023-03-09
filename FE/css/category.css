@@ -1,0 +1,71 @@
+.category {
+  width: 1136px;
+  max-width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.category > h1 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.category > .categoryCarousel {
+  position: relative;
+}
+
+.categoryListWrap {
+  overflow: hidden;
+}
+
+.categoryList {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.8s;
+}
+
+.categoryList > div > a > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 115px;
+}
+.categoryList > div > a > div > img {
+  width: 85px;
+  margin-bottom: 22px;
+}
+.categoryList > div > a > div > div {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: black;
+}
+
+.categoryPrevBtn,
+.categoryNextBtn {
+  position: absolute;
+  top: 40%;
+}
+
+.categoryPrevBtn {
+  left: -10px;
+}
+.categoryNextBtn {
+  right: -10px;
+}
+
+.categoryPrevBtn > button,
+.categoryNextBtn > button {
+  cursor: pointer;
+  width: 30px;
+  padding: 6px;
+  border: none;
+  background-color: rgba(150, 150, 150, 0.539);
+  border-radius: 50%;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
