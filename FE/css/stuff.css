@@ -1,0 +1,45 @@
+.stuff {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.stuffHeader {
+  width: 1136px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.stuffHeader > h1 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.stuffHeader .stuffHeaderBtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stuffHeader .stuffHeaderBtns > button {
+  border: none;
+  color: grey;
+  cursor: pointer;
+}
+.stuffHeader .stuffHeaderBtns > button:first-child {
+  padding: 8px 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.stuffHeader .stuffHeaderBtns > button:first-child:hover {
+  background-color: rgba(214, 214, 214, 0.492);
+}
+
+.stuffHeader .stuffHeaderBtns > button:last-child {
+  background-color: white;
+  font-size: 0.9em;
+}
+.stuffHeader .stuffHeaderBtns > button:last-child:hover {
+  opacity: 0.7;
+}
